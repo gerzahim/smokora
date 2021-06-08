@@ -176,6 +176,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         //AvoRed\Graphql\GraphqlProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
 
     ],
 
