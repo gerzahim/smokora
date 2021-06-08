@@ -23,7 +23,7 @@ class CheckForMaintenanceMode extends Original
      * @var \Webkul\Core\Models\Channel
      */
     protected $channel;
-    
+
     /**
      * Exclude route names.
      */
@@ -56,7 +56,8 @@ class CheckForMaintenanceMode extends Original
         $this->except[] = env('APP_ADMIN_URL', 'admin') . '*';
 
         /* adding exception for ips */
-        $this->excludedIPs = array_map('trim', explode(',', $this->channel->allowed_ips));
+        //$this->excludedIPs = array_map('trim', explode(',', $this->channel->allowed_ips));
+        $this->excludedIPs = '';
     }
 
     /**
@@ -106,7 +107,7 @@ class CheckForMaintenanceMode extends Original
                 }
             }
 
-            if ($this->shouldPassThrough($request)) 
+            if ($this->shouldPassThrough($request))
             {
                 return $response;
             }
