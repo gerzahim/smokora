@@ -240,6 +240,7 @@ return [
         'Cart' => \AvoRed\Framework\Support\Facades\Cart::class,
         'Tab' => \AvoRed\Framework\Support\Facades\Tab::class,
         'Asset' => \AvoRed\Assets\Support\Facades\Asset::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
