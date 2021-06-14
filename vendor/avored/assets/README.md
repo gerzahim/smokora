@@ -1,2 +1,0 @@
-# assets
- AvoRed Assets Manager
