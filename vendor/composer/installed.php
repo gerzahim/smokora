@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '5a3050d75beffa0f9d5b1a7cd4eb7ab98199769c',
+    'reference' => '4f6261d297ed3bbfb7c2d6aa357af788268a1826',
     'name' => 'avored/laravel-ecommerce',
   ),
   'versions' => 
@@ -45,7 +45,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '5a3050d75beffa0f9d5b1a7cd4eb7ab98199769c',
+      'reference' => '4f6261d297ed3bbfb7c2d6aa357af788268a1826',
     ),
     'barryvdh/laravel-debugbar' => 
     array (
