@@ -152,7 +152,7 @@ final class Invocation implements SelfDescribing
             case 'generator':
             case 'iterable':
                 $generator = static function () {
-                    yield from [];
+                    yield;
                 };
 
                 return $generator();

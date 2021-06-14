@@ -346,7 +346,6 @@ return array(
     'Barryvdh\\Debugbar\\DataCollector\\ViewCollector' => $vendorDir . '/barryvdh/laravel-debugbar/src/DataCollector/ViewCollector.php',
     'Barryvdh\\Debugbar\\DataFormatter\\QueryFormatter' => $vendorDir . '/barryvdh/laravel-debugbar/src/DataFormatter/QueryFormatter.php',
     'Barryvdh\\Debugbar\\DataFormatter\\SimpleFormatter' => $vendorDir . '/barryvdh/laravel-debugbar/src/DataFormatter/SimpleFormatter.php',
-    'Barryvdh\\Debugbar\\DebugbarViewEngine' => $vendorDir . '/barryvdh/laravel-debugbar/src/DebugbarViewEngine.php',
     'Barryvdh\\Debugbar\\Facade' => $vendorDir . '/barryvdh/laravel-debugbar/src/Facade.php',
     'Barryvdh\\Debugbar\\JavascriptRenderer' => $vendorDir . '/barryvdh/laravel-debugbar/src/JavascriptRenderer.php',
     'Barryvdh\\Debugbar\\LaravelDebugbar' => $vendorDir . '/barryvdh/laravel-debugbar/src/LaravelDebugbar.php',

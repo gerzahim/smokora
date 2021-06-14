@@ -1,7 +1,3 @@
-# 2.13.0
-
-* Add Netbeans editor
-
 # 2.12.1
 
 * Avoid redirecting away from an error.

@@ -674,22 +674,17 @@ class Inline
                     case Parser::preg_match('/^(-|\+)?[0-9][0-9_]*(\.[0-9_]+)?$/', $scalar):
                         return (float) str_replace('_', '', $scalar);
                     case Parser::preg_match(self::getTimestampRegex(), $scalar):
-                        // When no timezone is provided in the parsed date, YAML spec says we must assume UTC.
-                        $time = new \DateTime($scalar, new \DateTimeZone('UTC'));
-
                         if (Yaml::PARSE_DATETIME & $flags) {
-                            return $time;
+                            // When no timezone is provided in the parsed date, YAML spec says we must assume UTC.
+                            return new \DateTime($scalar, new \DateTimeZone('UTC'));
                         }
 
-                        try {
-                            if (false !== $scalar = $time->getTimestamp()) {
-                                return $scalar;
-                            }
-                        } catch (\ValueError $e) {
-                            // no-op
-                        }
+                        $timeZone = date_default_timezone_get();
+                        date_default_timezone_set('UTC');
+                        $time = strtotime($scalar);
+                        date_default_timezone_set($timeZone);
 
-                        return $time->format('U');
+                        return $time;
                 }
         }
 
