@@ -15,7 +15,6 @@
         "fideloper/proxy": "^4.0"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "^3.3",
         "beyondcode/laravel-dump-server": "^1.0",
         "deployer/deployer": "^6.8",
         "facade/ignition": "^1.4",
@@ -52,7 +51,6 @@
         "psr-4": {
             "Tests\\": "tests/",
             "AvoRed\\Framework\\Tests\\": "packages/avored/framework/tests/"
-
         }
     },
     "minimum-stability": "dev",
